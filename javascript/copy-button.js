@@ -1,11 +1,14 @@
-let cheatMenu
+let code
 
 (async () => {
-    cheatMenu = await (await fetch("https://raw.githubusercontent.com/hostedposted/BlooketXHackPreventer/master/bookmarklet.txt")).text()
+    code = await (await fetch("https://raw.githubusercontent.com/hostedposted/BlooketXHackPreventer/master/bookmarklet.txt")).text()
 })()
 
 document.getElementById("copy-button").addEventListener("click", () => {
-    navigator.clipboard.writeText(cheatMenu).then(() => {
+    if (!code) {
+        document.getElementById("copy-button").innerText = "Please try again soon!"
+    }
+    navigator.clipboard.writeText(code).then(() => {
         const oldText = document.getElementById("copy-button").innerText
         document.getElementById("copy-button").innerText = "Copied!"
         setTimeout(() => {
