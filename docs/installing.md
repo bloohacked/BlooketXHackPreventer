@@ -33,6 +33,9 @@ Now when you are in a Gold Rush or Santa's Workshop game you can click the bookm
 
 It is recommended to make the bookmark bar visible.
 
+Here's a video showing how to install Blooket X:
+![type:video](https://www.youtube.com/embed/YDwFWnKmUQY)
+
 <!-- Ad Unit 1 -->
 <ins class="adsbygoogle"
      style="display:block"
