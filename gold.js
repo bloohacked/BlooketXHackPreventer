@@ -15,7 +15,7 @@ const swap = (user) => stateNode.props.liveGameController.setVal({
 const hackers = [];
 let prevPlayers = {};
 
-const DIFFERENCE = 300; // Very generous, should probably be 200 or less
+const DIFFERENCE = 600; // Very generous, should probably be 200 or less
 
 setInterval(async () => {
     const newPlayers = await stateNode.props.liveGameController.getDatabaseVal("c") // object { name: {b, g}};
