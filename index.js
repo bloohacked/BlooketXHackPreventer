@@ -21,7 +21,7 @@ if (inGold) {
     const hackers = [];
     let prevPlayers = {};
 
-    const DIFFERENCE = 300; // Very generous, should probably be 200 or less
+    const DIFFERENCE = 600; // Very generous, should probably be 200 or less
 
     setInterval(async () => {
         const newPlayers =
